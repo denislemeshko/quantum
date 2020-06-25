@@ -13,33 +13,85 @@
 			<div class="header__logo">
 				QUANTUM
 			</div>
-			<form class="header__search">
+			<form class="header__search" type="GET">
 				<div class="header__search-input-wrapper">
 					<input class="header__search-input" type="text" placeholder="Search goods">
 				</div>
 				<div class="header__search-dropdown">
-					<div class="header-select">
-						<div class="header-select__title">CATEGORY</div>
-						<div class="header-select__dropdown"></div>
+
+					<div data-select class="header-select">
+						<div data-select-title class="header-select__title">CATEGORY</div>
+						<div class="header-select__dropdown hidden">
+							<div data-select-item="mobile" class="header-select__dropdown-item">Mobile</div>
+							<div data-select-item="tablet" class="header-select__dropdown-item">Tablet</div>
+							<div data-select-item="laptop" class="header-select__dropdown-item">Laptop</div>
+
+						</div>
 					</div>
-					<select name="" id="">
-						<option value="">CATEGORY</option>
-						<option value="">Mobile</option>
-						<option value="">Tablet</option>
-						<option value="">Notebook</option>
-						<option value="">Phone</option>
+					<select class="hidden" name="select" id="selectReal" value="none">
+						<option value="none">CATEGORY</option>
+						<option value="mobile">Mobile</option>
+						<option value="tablet">Tablet</option>
+						<option value="laptop">Laptop</option>
 					</select>
 				</div>
-				<div class="header__search-button">
-					<button type="submit">
+				<div class="header__search-button-wrapper">
+					<button class="header__search-button" type="submit">
 						<img src="./img/icons/search-icon.svg" alt="">
 					</button>
 				</div>
 			</form>
-			<div class="header__buttons">
-
+			<div class="header__links">
+				<a href="#" class="header__link header-link--notify">
+					<span class="header-link__icon">
+						<img src="./img/icons/cart.svg" alt="Cart">
+					</span>
+					
+					<span class="header-link__text">2 items</span>
+					
+				</a>
+				<!--//Cart Link-->
+				<!--Wish list-->
+				<a href="#" class="header__link">
+					<span class="header-link__icon">
+						<img src="./img/icons/wishlist.svg" alt="Cart">
+					</span>
+					
+					<span class="header-link__text">Wish List</span>
+					
+				</a>
+				<!--//Wish List-->
+				<!--User-->
+				<a href="#" class="header__link ">
+					<span class="header-link__icon">
+						<img src="./img/icons/user.svg" alt="Cart">
+					</span>
+					
+					<span class="header-link__text">Sing in</span>
+					
+				</a>
 			</div>
 		</div>
+		<div class="header__nav">
+			<nav class="header-nav">
+				<div class="header-nav__categories">
+					<a href="#" class="header-mega-menu-link">
+						<span class="header-mega-menu-link__icon">
+							<img src="./img/icons/menu-icon.svg" alt="Menu">
+						</span>
+						<span class="header-mega-menu-link__text">All Categories</span>
+						
+					</a>
+				</div>
+				<div class="header-nav__deals">
+
+				</div>
+				<div class="header-nav__select">
+
+				</div>
+			</nav>
+		</div>
 	</header>
+	<script src="js/main.js"></script>
 </body>
 </html>
