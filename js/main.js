@@ -1,20 +1,29 @@
 //Нашли контейнер с селектом
-const selectElement = document.querySelector("[data-select]");
-//Нашли реальный селект
-const selectReal = document.querySelector("#selectReal");
+const selectAllElements = document.querySelectorAll("[data-select]");
 
-//Прослушиваем клик внутри контейнера с селектом
-selectElement.addEventListener("click",function(event){
-//Проверка где произошел клик
-//event.target -показывает на каком теге произошел клик
-	if(event.target.hasAttribute("data-select-item")){
-		console.log("Click on ITEM!");
-		const itemTitle = event.target.getAttribute("data-select-item");
-		event.target.closest("[data-select").querySelector("[data-select-title").textContent = itemTitle;
-		event.target.closest("[data-select").querySelector(".header-select__dropdown").classList.toggle("hidden");
-		selectReal.value = itemTitle
-	} else {
-		console.log("Click on TITLE and Around!");
-		this.querySelector(".header-select__dropdown").classList.toggle("hidden");
-	}
+selectAllElements.forEach(function(item){
+	item.addEventListener("click", function(){
+		const realSelect = this.nextElementSibling;
+
+		if (event.target.hasAttribute("data-select-item")) {
+
+			var itemTitle = event.target.getAttribute("data-select-item")
+
+			this.querySelector("[data-select-title]").textContent = itemTitle;
+
+			this.querySelector(".header-select__dropdown").classList.toggle("hidden");
+			if(realSelect){
+				realSelect.value = itemTitle;
+			}
+	
+
+			
+
+	
+		
+		} else {
+
+			this.querySelector(".header-select__dropdown").classList.toggle("hidden");
+		}
+	})
 });

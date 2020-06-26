@@ -6,7 +6,9 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-}
+	}
+
+
 .header-select__title {
 	position: relative;
 	width: 83px;
@@ -56,5 +58,20 @@
 	}
 	&:hover {
 		background-color: #f1f1f1;
+	}
+}
+
+.header-select.header-select--nav{
+	padding-left: 28px;
+	padding-right: 28px;
+
+	.header-select__title{
+		width: auto;
+		padding-right: 20px;;
+		font-size: 14px;
+		text-transform: none;
+		color: #b3b3b3;
+		font-weight: 500;
+		line-height: 1;
 	}
 }
