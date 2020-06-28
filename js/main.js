@@ -1,29 +1,8 @@
-//Нашли контейнер с селектом
-const selectAllElements = document.querySelectorAll("[data-select]");
-
-selectAllElements.forEach(function(item){
-	item.addEventListener("click", function(){
-		const realSelect = this.nextElementSibling;
-
-		if (event.target.hasAttribute("data-select-item")) {
-
-			var itemTitle = event.target.getAttribute("data-select-item")
-
-			this.querySelector("[data-select-title]").textContent = itemTitle;
-
-			this.querySelector(".header-select__dropdown").classList.toggle("hidden");
-			if(realSelect){
-				realSelect.value = itemTitle;
-			}
-	
-
-			
-
-	
-		
-		} else {
-
-			this.querySelector(".header-select__dropdown").classList.toggle("hidden");
-		}
-	})
+$(document).ready(function(){
+	$("#carousel-header").owlCarousel({
+		items: 1,
+		nav: true,
+		navText: [],
+		loop: true
+	});
 });
