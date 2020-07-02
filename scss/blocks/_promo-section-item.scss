@@ -13,9 +13,10 @@
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 	border-radius: 6px;
 	background-color: #fff;
-	transition: box-shadow 0.2s ease-in;
+	transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
 
 	&:hover {
+		transform: translateY(-7px);
 		box-shadow: 0 3px 25px rgba(0, 0, 0, 0.03);
 	}
 }

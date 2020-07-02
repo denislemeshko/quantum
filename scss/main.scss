@@ -1,4 +1,5 @@
 @import"./base/variables";
+@import"./base/mixins";
 // Base
 @import"./base/base";
 // Blocks
@@ -12,3 +13,5 @@
 @import"./blocks/carousel-theme";
 @import"./blocks/promo-section";
 @import"./blocks/promo-section-item";
+@import"./blocks/navigation";
+@import"./blocks/main";
