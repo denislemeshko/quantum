@@ -1,5 +1,5 @@
 .navigation{
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	@extend %mixin-card;
 }
 .navigation__list {
@@ -14,6 +14,10 @@
 	border-bottom: 2px solid #f5f5f5;
 	color: #808080;
 	transition: 0.2s color ease-in;
+
+	&:last-child {
+		border-bottom: none;
+	}
 	.navigation__icon {
 		fill: #ccc;
 		transition: 0.2s fill ease-in;

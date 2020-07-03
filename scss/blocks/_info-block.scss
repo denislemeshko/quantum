@@ -1,0 +1,22 @@
+.info-block {
+	@extend %mixin-card;
+	margin-bottom: 30px;
+	height: 336px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.info-block__title {
+	margin-bottom: 18px;
+	color: #666666;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.info-block__subtitle {
+	color: #d1d1d1;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 2.14;
+}
