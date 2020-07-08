@@ -10,14 +10,14 @@
 }
 .card {
 	@extend %mixin-card;
-	padding: 20px;
+	padding: 21px 20px 30px;
 	width: 255px;
 }
 .card__header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 }
 .card__sale{
 	border-radius: 4px;
@@ -51,16 +51,17 @@
 
 	& + & {
 		margin-left: 25px;
+		margin-top: 2px;
 	}
 }
 
 .card__img {
 	height: 160px;
-	margin-bottom: 34px;
+	margin-bottom: 31px;
 	text-align: center;
 }
 .card__title {
-	margin-bottom: 25px;
+	margin-bottom: 21px;
 	font-size: 14px;
 	color: rgb(102, 102, 102);
 	line-height: 1.429;
@@ -70,7 +71,7 @@
 .card__rating {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 29px;
+	margin-bottom: 28px;
 
 	& > * + * {
 		margin-left: 4px;

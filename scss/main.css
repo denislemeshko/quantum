@@ -615,7 +615,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .info-block {
   margin-bottom: 30px;
-  height: 336px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -681,7 +681,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .card {
-  padding: 20px;
+  padding: 21px 20px 30px;
   width: 255px;
 }
 
@@ -689,7 +689,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .card__sale {
@@ -722,16 +722,17 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .card__icon-btn + .card__icon-btn {
   margin-left: 25px;
+  margin-top: 2px;
 }
 
 .card__img {
   height: 160px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   text-align: center;
 }
 
 .card__title {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   font-size: 14px;
   color: #666666;
   line-height: 1.429;
@@ -741,7 +742,7 @@ h1, h2, h3, h4, h5, h6, p {
 .card__rating {
   display: flex;
   justify-content: center;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 .card__rating > * + * {
   margin-left: 4px;
